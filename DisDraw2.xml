@@ -53,7 +53,7 @@
                 </statement>
                 <value name="IF1">
                   <block type="sensor_button" id="325">
-                    <field name="OBJECT">UP</field>
+                    <field name="OBJECT">DOWN</field>
                   </block>
                 </value>
                 <statement name="DO1">

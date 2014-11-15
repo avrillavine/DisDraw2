@@ -29,10 +29,33 @@
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="oled_cleardisplay" id="11">
+                  <block type="robot_delay" id="291" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="292">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="multimedia_displaybmp" id="12">
-                        <field name="BMP">DFLogo.bmp</field>
+                      <block type="oled_cleardisplay" id="11">
+                        <next>
+                          <block type="multimedia_displaybmp" id="12">
+                            <field name="BMP">DFLogo.bmp</field>
+                            <next>
+                              <block type="oled_setend" id="301" inline="true">
+                                <value name="ENDX">
+                                  <block type="math_number" id="302">
+                                    <field name="NUM">100</field>
+                                  </block>
+                                </value>
+                                <value name="ENDY">
+                                  <block type="math_number" id="303">
+                                    <field name="NUM">100</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>

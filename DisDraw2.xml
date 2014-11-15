@@ -57,17 +57,22 @@
                   </block>
                 </value>
                 <statement name="DO1">
-                  <block type="oled_setend" id="329" inline="true">
-                    <value name="ENDX">
-                      <block type="math_number" id="330">
-                        <field name="NUM">30</field>
+                  <block type="multimedia_displaybmp" id="332">
+                    <field name="BMP">DFLogo.bmp</field>
+                    <next>
+                      <block type="oled_setend" id="329" inline="true">
+                        <value name="ENDX">
+                          <block type="math_number" id="330">
+                            <field name="NUM">30</field>
+                          </block>
+                        </value>
+                        <value name="ENDY">
+                          <block type="math_number" id="331">
+                            <field name="NUM">30</field>
+                          </block>
+                        </value>
                       </block>
-                    </value>
-                    <value name="ENDY">
-                      <block type="math_number" id="331">
-                        <field name="NUM">30</field>
-                      </block>
-                    </value>
+                    </next>
                   </block>
                 </statement>
               </block>

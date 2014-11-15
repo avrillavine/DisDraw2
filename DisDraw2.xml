@@ -85,20 +85,20 @@
                               </block>
                             </statement>
                             <next>
-                              <block type="multimedia_displaybmp" id="307">
-                                <field name="BMP">DFLogo.bmp</field>
+                              <block type="oled_setend" id="275" inline="true">
+                                <value name="ENDX">
+                                  <block type="variables_get" id="677">
+                                    <field name="VAR">size</field>
+                                  </block>
+                                </value>
+                                <value name="ENDY">
+                                  <block type="variables_get" id="678">
+                                    <field name="VAR">size</field>
+                                  </block>
+                                </value>
                                 <next>
-                                  <block type="oled_setend" id="275" inline="true">
-                                    <value name="ENDX">
-                                      <block type="variables_get" id="677">
-                                        <field name="VAR">size</field>
-                                      </block>
-                                    </value>
-                                    <value name="ENDY">
-                                      <block type="variables_get" id="678">
-                                        <field name="VAR">size</field>
-                                      </block>
-                                    </value>
+                                  <block type="multimedia_displaybmp" id="307">
+                                    <field name="BMP">DFLogo.bmp</field>
                                   </block>
                                 </next>
                               </block>

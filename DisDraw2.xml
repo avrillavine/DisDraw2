@@ -48,7 +48,7 @@
                               <block type="oled_setend" id="95" inline="true">
                                 <value name="ENDX">
                                   <block type="math_number" id="96">
-                                    <field name="NUM">50</field>
+                                    <field name="NUM">100</field>
                                   </block>
                                 </value>
                                 <value name="ENDY">

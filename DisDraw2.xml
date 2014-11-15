@@ -21,21 +21,21 @@
               </block>
             </value>
             <next>
-              <block type="controls_if" id="9" inline="false">
-                <mutation elseif="1"></mutation>
-                <value name="IF0">
-                  <block type="sensor_button" id="10">
-                    <field name="OBJECT">UP</field>
+              <block type="robot_delay" id="291" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="292">
+                    <field name="NUM">500</field>
                   </block>
                 </value>
-                <statement name="DO0">
-                  <block type="robot_delay" id="291" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="292">
-                        <field name="NUM">500</field>
+                <next>
+                  <block type="controls_if" id="9" inline="false">
+                    <mutation elseif="1"></mutation>
+                    <value name="IF0">
+                      <block type="sensor_button" id="10">
+                        <field name="OBJECT">UP</field>
                       </block>
                     </value>
-                    <next>
+                    <statement name="DO0">
                       <block type="oled_cleardisplay" id="11">
                         <next>
                           <block type="multimedia_displaybmp" id="12">
@@ -57,17 +57,17 @@
                           </block>
                         </next>
                       </block>
-                    </next>
+                    </statement>
+                    <value name="IF1">
+                      <block type="sensor_button" id="225">
+                        <field name="OBJECT">DOWN</field>
+                      </block>
+                    </value>
+                    <statement name="DO1">
+                      <block type="oled_cleardisplay" id="226"></block>
+                    </statement>
                   </block>
-                </statement>
-                <value name="IF1">
-                  <block type="sensor_button" id="225">
-                    <field name="OBJECT">DOWN</field>
-                  </block>
-                </value>
-                <statement name="DO1">
-                  <block type="oled_cleardisplay" id="226"></block>
-                </statement>
+                </next>
               </block>
             </next>
           </block>

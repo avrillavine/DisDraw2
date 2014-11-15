@@ -66,7 +66,22 @@
                   </block>
                 </value>
                 <statement name="DO1">
-                  <block type="oled_cleardisplay" id="324"></block>
+                  <block type="oled_cleardisplay" id="324">
+                    <next>
+                      <block type="oled_setend" id="326" inline="true">
+                        <value name="ENDX">
+                          <block type="math_number" id="327">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                        <value name="ENDY">
+                          <block type="math_number" id="328">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
                 </statement>
               </block>
             </next>

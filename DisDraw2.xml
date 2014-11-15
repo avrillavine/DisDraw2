@@ -22,6 +22,7 @@
             </value>
             <next>
               <block type="controls_if" id="141" inline="false">
+                <mutation elseif="1"></mutation>
                 <value name="IF0">
                   <block type="sensor_button" id="222">
                     <field name="OBJECT">UP</field>
@@ -48,7 +49,7 @@
                               <block type="robot_delay" id="318" inline="true">
                                 <value name="DELAY">
                                   <block type="math_number" id="319">
-                                    <field name="NUM">1000</field>
+                                    <field name="NUM">500</field>
                                   </block>
                                 </value>
                               </block>
@@ -58,6 +59,14 @@
                       </block>
                     </next>
                   </block>
+                </statement>
+                <value name="IF1">
+                  <block type="sensor_button" id="325">
+                    <field name="OBJECT">DOWN</field>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block type="oled_cleardisplay" id="324"></block>
                 </statement>
               </block>
             </next>

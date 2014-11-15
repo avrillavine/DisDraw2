@@ -97,7 +97,8 @@
                                   </block>
                                 </statement>
                                 <next>
-                                  <block type="oled_cleardisplay" id="240">
+                                  <block type="multimedia_displaybmp" id="307">
+                                    <field name="BMP">DFLogo.bmp</field>
                                     <next>
                                       <block type="oled_setend" id="275" inline="true">
                                         <value name="ENDX">
@@ -110,11 +111,6 @@
                                             <field name="VAR">size</field>
                                           </block>
                                         </value>
-                                        <next>
-                                          <block type="multimedia_displaybmp" id="307">
-                                            <field name="BMP">DFLogo.bmp</field>
-                                          </block>
-                                        </next>
                                       </block>
                                     </next>
                                   </block>

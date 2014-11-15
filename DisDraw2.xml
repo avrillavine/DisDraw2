@@ -45,15 +45,6 @@
                         <next>
                           <block type="multimedia_displaybmp" id="307">
                             <field name="BMP">DFLogo.bmp</field>
-                            <next>
-                              <block type="robot_delay" id="318" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="319">
-                                    <field name="NUM">2000</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
                           </block>
                         </next>
                       </block>
@@ -62,25 +53,21 @@
                 </statement>
                 <value name="IF1">
                   <block type="sensor_button" id="325">
-                    <field name="OBJECT">DOWN</field>
+                    <field name="OBJECT">UP</field>
                   </block>
                 </value>
                 <statement name="DO1">
-                  <block type="oled_cleardisplay" id="324">
-                    <next>
-                      <block type="oled_setend" id="326" inline="true">
-                        <value name="ENDX">
-                          <block type="math_number" id="327">
-                            <field name="NUM">10</field>
-                          </block>
-                        </value>
-                        <value name="ENDY">
-                          <block type="math_number" id="328">
-                            <field name="NUM">10</field>
-                          </block>
-                        </value>
+                  <block type="oled_setend" id="329" inline="true">
+                    <value name="ENDX">
+                      <block type="math_number" id="330">
+                        <field name="NUM">30</field>
                       </block>
-                    </next>
+                    </value>
+                    <value name="ENDY">
+                      <block type="math_number" id="331">
+                        <field name="NUM">30</field>
+                      </block>
+                    </value>
                   </block>
                 </statement>
               </block>

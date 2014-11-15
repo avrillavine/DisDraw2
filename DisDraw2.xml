@@ -1,85 +1,157 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="53" inline="false" x="56" y="39">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_button" id="115">
-        <field name="OBJECT">ENTER</field>
+  <block type="variables_set" id="354" inline="true" x="68" y="6">
+    <field name="VAR">size</field>
+    <value name="VALUE">
+      <block type="math_number" id="388">
+        <field name="NUM">10</field>
       </block>
     </value>
-    <statement name="DO">
-      <block type="oled_cleardisplay" id="264">
-        <next>
-          <block type="oled_setcursor" id="249" inline="true">
-            <value name="STARTX">
-              <block type="math_number" id="262">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-            <value name="STARTY">
-              <block type="math_number" id="263">
-                <field name="NUM">1</field>
-              </block>
-            </value>
+    <next>
+      <block type="controls_whileUntil" id="53" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_button" id="115">
+            <field name="OBJECT">ENTER</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="oled_cleardisplay" id="264">
             <next>
-              <block type="controls_if" id="141" inline="false">
-                <mutation elseif="1"></mutation>
-                <value name="IF0">
-                  <block type="sensor_button" id="222">
-                    <field name="OBJECT">UP</field>
+              <block type="oled_setcursor" id="249" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="262">
+                    <field name="NUM">1</field>
                   </block>
                 </value>
-                <statement name="DO0">
-                  <block type="oled_cleardisplay" id="240">
-                    <next>
-                      <block type="oled_setend" id="275" inline="true">
-                        <value name="ENDX">
-                          <block type="math_number" id="289">
-                            <field name="NUM">10</field>
-                          </block>
-                        </value>
-                        <value name="ENDY">
-                          <block type="math_number" id="290">
-                            <field name="NUM">10</field>
-                          </block>
-                        </value>
+                <value name="STARTY">
+                  <block type="math_number" id="263">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="141" inline="false">
+                    <mutation elseif="1"></mutation>
+                    <value name="IF0">
+                      <block type="sensor_button" id="222">
+                        <field name="OBJECT">UP</field>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="oled_cleardisplay" id="582">
                         <next>
-                          <block type="multimedia_displaybmp" id="307">
-                            <field name="BMP">DFLogo.bmp</field>
+                          <block type="oled_setend" id="579" inline="true">
+                            <value name="ENDX">
+                              <block type="math_number" id="580">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <value name="ENDY">
+                              <block type="math_number" id="581">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="controls_whileUntil" id="472" inline="false">
+                                <field name="MODE">UNTIL</field>
+                                <value name="NUMBER">
+                                  <block type="sensor_button" id="325">
+                                    <field name="OBJECT">DOWN</field>
+                                  </block>
+                                </value>
+                                <statement name="DO">
+                                  <block type="controls_if" id="588" inline="false">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="625" inline="true">
+                                        <field name="OP">LT</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="607">
+                                            <field name="VAR">size</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="642">
+                                            <field name="NUM">50</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="variables_set" id="647" inline="true">
+                                        <field name="VAR">size</field>
+                                        <value name="VALUE">
+                                          <block type="math_arithmetic" id="658" inline="true">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="663">
+                                                <field name="VAR">size</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="676">
+                                                <field name="NUM">10</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="oled_cleardisplay" id="240">
+                                    <next>
+                                      <block type="oled_setend" id="275" inline="true">
+                                        <value name="ENDX">
+                                          <block type="math_number" id="289">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                        <value name="ENDY">
+                                          <block type="math_number" id="290">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="multimedia_displaybmp" id="307">
+                                            <field name="BMP">DFLogo.bmp</field>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
-                    </next>
-                  </block>
-                </statement>
-                <value name="IF1">
-                  <block type="sensor_button" id="325">
-                    <field name="OBJECT">DOWN</field>
-                  </block>
-                </value>
-                <statement name="DO1">
-                  <block type="multimedia_displaybmp" id="332">
-                    <field name="BMP">DFLogo.bmp</field>
-                    <next>
-                      <block type="oled_setend" id="329" inline="true">
-                        <value name="ENDX">
-                          <block type="math_number" id="330">
-                            <field name="NUM">30</field>
+                    </statement>
+                    <statement name="DO1">
+                      <block type="multimedia_displaybmp" id="332">
+                        <field name="BMP">DFLogo.bmp</field>
+                        <next>
+                          <block type="oled_setend" id="329" inline="true">
+                            <value name="ENDX">
+                              <block type="math_number" id="330">
+                                <field name="NUM">30</field>
+                              </block>
+                            </value>
+                            <value name="ENDY">
+                              <block type="math_number" id="331">
+                                <field name="NUM">30</field>
+                              </block>
+                            </value>
                           </block>
-                        </value>
-                        <value name="ENDY">
-                          <block type="math_number" id="331">
-                            <field name="NUM">30</field>
-                          </block>
-                        </value>
+                        </next>
                       </block>
-                    </next>
+                    </statement>
                   </block>
-                </statement>
+                </next>
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>

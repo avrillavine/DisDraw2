@@ -32,7 +32,7 @@
                   <block type="oled_cleardisplay" id="9">
                     <next>
                       <block type="multimedia_displaybmp" id="10">
-                        <field name="BMP">DFLogo.bmp</field>
+                        <field name="BMP">DFLogo2.bmp</field>
                         <next>
                           <block type="oled_setend" id="11" inline="true">
                             <value name="ENDX">

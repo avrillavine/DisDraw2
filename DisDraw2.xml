@@ -71,17 +71,22 @@
                     <statement name="ELSE">
                       <block type="oled_cleardisplay" id="17">
                         <next>
-                          <block type="oled_setend" id="76" inline="true">
-                            <value name="ENDX">
-                              <block type="variables_get" id="46">
-                                <field name="VAR">clr</field>
+                          <block type="multimedia_displaybmp" id="110">
+                            <field name="BMP">DFLogo3.bmp</field>
+                            <next>
+                              <block type="oled_setend" id="76" inline="true">
+                                <value name="ENDX">
+                                  <block type="variables_get" id="46">
+                                    <field name="VAR">clr</field>
+                                  </block>
+                                </value>
+                                <value name="ENDY">
+                                  <block type="variables_get" id="47">
+                                    <field name="VAR">clr</field>
+                                  </block>
+                                </value>
                               </block>
-                            </value>
-                            <value name="ENDY">
-                              <block type="variables_get" id="47">
-                                <field name="VAR">clr</field>
-                              </block>
-                            </value>
+                            </next>
                           </block>
                         </next>
                       </block>

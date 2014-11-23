@@ -78,20 +78,6 @@
                                 <field name="NUM">100</field>
                               </block>
                             </value>
-                            <next>
-                              <block type="oled_setend" id="172" inline="true">
-                                <value name="ENDX">
-                                  <block type="variables_get" id="114">
-                                    <field name="VAR">clr</field>
-                                  </block>
-                                </value>
-                                <value name="ENDY">
-                                  <block type="variables_get" id="175">
-                                    <field name="VAR">clr</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
                           </block>
                         </next>
                       </block>

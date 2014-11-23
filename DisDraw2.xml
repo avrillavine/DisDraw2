@@ -53,15 +53,6 @@
                                     <field name="NUM">100</field>
                                   </block>
                                 </value>
-                                <next>
-                                  <block type="robot_delay" id="108" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="109">
-                                        <field name="NUM">500</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
                               </block>
                             </next>
                           </block>
@@ -74,13 +65,13 @@
                           <block type="multimedia_displaybmp" id="110">
                             <field name="BMP">DFLogo3.bmp</field>
                             <next>
-                              <block type="oled_setend" id="76" inline="true">
-                                <value name="ENDX">
+                              <block type="oled_setcursor" id="111" inline="true">
+                                <value name="STARTX">
                                   <block type="variables_get" id="46">
                                     <field name="VAR">clr</field>
                                   </block>
                                 </value>
-                                <value name="ENDY">
+                                <value name="STARTY">
                                   <block type="variables_get" id="47">
                                     <field name="VAR">clr</field>
                                   </block>

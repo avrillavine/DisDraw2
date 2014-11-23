@@ -3,7 +3,7 @@
     <field name="VAR">clr</field>
     <value name="VALUE">
       <block type="math_number" id="2">
-        <field name="NUM">0</field>
+        <field name="NUM">100</field>
       </block>
     </value>
     <next>

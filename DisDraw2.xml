@@ -15,80 +15,82 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="controls_if" id="9" inline="false">
-            <mutation elseif="1" else="1"></mutation>
+          <block type="controls_if" id="5" inline="false">
+            <mutation elseif="1"></mutation>
             <value name="IF0">
-              <block type="sensor_button" id="10">
+              <block type="sensor_button" id="6">
                 <field name="OBJECT">UP</field>
               </block>
             </value>
             <statement name="DO0">
-              <block type="oled_cleardisplay" id="11">
-                <next>
-                  <block type="multimedia_displaybmp" id="12">
-                    <field name="BMP">DFLogo3.bmp</field>
+              <block type="controls_whileUntil" id="41" inline="false">
+                <field name="MODE">UNTIL</field>
+                <value name="NUMBER">
+                  <block type="sensor_button" id="42">
+                    <field name="OBJECT">DOWN</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="oled_cleardisplay" id="7">
                     <next>
-                      <block type="oled_setend" id="13" inline="true">
-                        <value name="ENDX">
-                          <block type="math_number" id="14">
-                            <field name="NUM">100</field>
+                      <block type="multimedia_displaybmp" id="8">
+                        <field name="BMP">DFLogo3.bmp</field>
+                        <next>
+                          <block type="oled_setend" id="9" inline="true">
+                            <value name="ENDX">
+                              <block type="math_number" id="10">
+                                <field name="NUM">100</field>
+                              </block>
+                            </value>
+                            <value name="ENDY">
+                              <block type="math_number" id="11">
+                                <field name="NUM">100</field>
+                              </block>
+                            </value>
                           </block>
-                        </value>
-                        <value name="ENDY">
-                          <block type="math_number" id="15">
-                            <field name="NUM">100</field>
-                          </block>
-                        </value>
+                        </next>
                       </block>
                     </next>
                   </block>
-                </next>
+                </statement>
               </block>
             </statement>
             <value name="IF1">
-              <block type="sensor_button" id="145">
+              <block type="sensor_button" id="12">
                 <field name="OBJECT">DOWN</field>
               </block>
             </value>
             <statement name="DO1">
-              <block type="oled_cleardisplay" id="160">
-                <next>
-                  <block type="oled_setcursor" id="161" inline="true">
-                    <value name="STARTX">
-                      <block type="variables_get" id="162">
-                        <field name="VAR">clr</field>
-                      </block>
-                    </value>
-                    <value name="STARTY">
-                      <block type="variables_get" id="163">
-                        <field name="VAR">clr</field>
-                      </block>
-                    </value>
+              <block type="controls_whileUntil" id="48" inline="false">
+                <field name="MODE">UNTIL</field>
+                <value name="NUMBER">
+                  <block type="sensor_button" id="49">
+                    <field name="OBJECT">UP</field>
                   </block>
-                </next>
-              </block>
-            </statement>
-            <statement name="ELSE">
-              <block type="oled_cleardisplay" id="17">
-                <next>
-                  <block type="multimedia_displaybmp" id="110">
-                    <field name="BMP">DFLogo3.bmp</field>
+                </value>
+                <statement name="DO">
+                  <block type="oled_cleardisplay" id="17">
                     <next>
-                      <block type="oled_setcursor" id="111" inline="true">
-                        <value name="STARTX">
-                          <block type="variables_get" id="46">
-                            <field name="VAR">clr</field>
+                      <block type="multimedia_displaybmp" id="18">
+                        <field name="BMP">DFLogo3.bmp</field>
+                        <next>
+                          <block type="oled_setcursor" id="19" inline="true">
+                            <value name="STARTX">
+                              <block type="variables_get" id="20">
+                                <field name="VAR">clr</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="variables_get" id="21">
+                                <field name="VAR">clr</field>
+                              </block>
+                            </value>
                           </block>
-                        </value>
-                        <value name="STARTY">
-                          <block type="variables_get" id="47">
-                            <field name="VAR">clr</field>
-                          </block>
-                        </value>
+                        </next>
                       </block>
                     </next>
                   </block>
-                </next>
+                </statement>
               </block>
             </statement>
           </block>

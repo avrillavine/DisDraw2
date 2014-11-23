@@ -37,27 +37,27 @@
                       </block>
                     </value>
                     <statement name="DO0">
-                      <block type="robot_delay" id="108" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="109">
-                            <field name="NUM">500</field>
-                          </block>
-                        </value>
+                      <block type="oled_cleardisplay" id="11">
                         <next>
-                          <block type="oled_cleardisplay" id="11">
+                          <block type="multimedia_displaybmp" id="12">
+                            <field name="BMP">DFLogo3.bmp</field>
                             <next>
-                              <block type="multimedia_displaybmp" id="12">
-                                <field name="BMP">DFLogo3.bmp</field>
+                              <block type="oled_setend" id="13" inline="true">
+                                <value name="ENDX">
+                                  <block type="math_number" id="14">
+                                    <field name="NUM">100</field>
+                                  </block>
+                                </value>
+                                <value name="ENDY">
+                                  <block type="math_number" id="15">
+                                    <field name="NUM">100</field>
+                                  </block>
+                                </value>
                                 <next>
-                                  <block type="oled_setend" id="13" inline="true">
-                                    <value name="ENDX">
-                                      <block type="math_number" id="14">
-                                        <field name="NUM">100</field>
-                                      </block>
-                                    </value>
-                                    <value name="ENDY">
-                                      <block type="math_number" id="15">
-                                        <field name="NUM">100</field>
+                                  <block type="robot_delay" id="108" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="109">
+                                        <field name="NUM">500</field>
                                       </block>
                                     </value>
                                   </block>

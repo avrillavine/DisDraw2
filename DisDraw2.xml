@@ -30,7 +30,7 @@
                 </value>
                 <next>
                   <block type="controls_if" id="9" inline="false">
-                    <mutation else="1"></mutation>
+                    <mutation elseif="1" else="1"></mutation>
                     <value name="IF0">
                       <block type="sensor_button" id="10">
                         <field name="OBJECT">UP</field>
@@ -55,6 +55,29 @@
                                 </value>
                               </block>
                             </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <value name="IF1">
+                      <block type="sensor_button" id="145">
+                        <field name="OBJECT">DOWN</field>
+                      </block>
+                    </value>
+                    <statement name="DO1">
+                      <block type="oled_cleardisplay" id="160">
+                        <next>
+                          <block type="oled_setcursor" id="161" inline="true">
+                            <value name="STARTX">
+                              <block type="variables_get" id="162">
+                                <field name="VAR">clr</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="variables_get" id="163">
+                                <field name="VAR">clr</field>
+                              </block>
+                            </value>
                           </block>
                         </next>
                       </block>
